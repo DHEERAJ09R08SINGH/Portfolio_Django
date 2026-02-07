@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<section class="home">
+    <div class="home-container">
+        <div class="home-text"> 
+            <h6>Hi, I'm</h6>
+            <h5>Dheeraj R Singh</h5>
+            <h4>Python Develper</h4>
+
+            <div class="home-buttons">
+                <a href="{% static 'pdf/Dheeraj_R_Singh.pdf' %}" target="_blank">
+                    <button class="btn primary">Resume</button>
+                </a>
+                <a id="hireme" class="btn outline" href="{% url 'contact' %}" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-image">
+        <div class="profile-pic">
+            <img src="{% static 'images/photo.png' %}" alt="Dheeraj R Singh">
+        </div>
+    </div>
+</section>
+
+<section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <a href="https://github.com/DHEERAJ09R08SINGH/Sign-Language-Detection-using-LSTM-OpenCv-Mediapipe."
+               target="_blank" class="project-link">
+                <img src="{% static 'images/project1.jpg' %}" alt="Project 1">
+                <h3>Sign Language Detection System</h3>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://github.com/DHEERAJ09R08SINGH/Face_Recognition_System_using_haarcascade_frontalface_default.xml"
+               target="_blank" class="project-link">
+                <img src="{% static 'images/project2.jpeg' %}" alt="Project 2">
+                <h3>Face Recognition System</h3>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://dheeraj09r08singh.github.io/Calculator-simple/"
+               target="_blank" class="project-link">
+                <img src="{% static 'images/project3.jpg' %}" alt="Project 3">
+                <h3>Calculator</h3>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://github.com/DHEERAJ09R08SINGH/Text_Summerizer_NLP"
+               target="_blank" class="project-link">
+                <img src="{% static 'images/project4.png' %}" alt="Project 4">
+                <h3>Text Summarization</h3>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

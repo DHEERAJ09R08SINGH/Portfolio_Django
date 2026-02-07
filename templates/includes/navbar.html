@@ -1,0 +1,35 @@
+<header class="header">
+    {% load static %}
+
+    <div class="logo">
+        <!-- Optional image -->
+        <!-- <img src="{% static 'images/logo.png' %}" alt="Logo"> -->
+        <h2>Portfolio</h2>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="{% url 'home' %}"
+                class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+                Home
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'about' %}"
+                class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">
+                About
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'contact' %}"
+                class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
+                Contact
+                </a>
+            </li>
+        </ul>
+    
+    </nav>
+</header>

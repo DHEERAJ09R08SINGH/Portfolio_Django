@@ -139,7 +139,7 @@ python manage.py runserver
 ## 👨‍💻 Author
 
 **Dheeraj R Singh**
-Python Developer | Django | REST APIs
+
 
 🔗 GitHub: [https://github.com/DHEERAJ09R08SINGH](https://github.com/DHEERAJ09R08SINGH)
 
